@@ -38,6 +38,73 @@
     <![endif]-->
 
 <style type="text/css">
+.dropbtn {
+  background-color: inherit;
+  color: white;
+  padding: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.dropbtn {
+  background-color: inherit;
+  color: white;
+  padding: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
   .lead-plus {font-size: 26.5px;}
   .label-xs {font-size: 10px;}
@@ -214,9 +281,19 @@
         
         
         
-        <li  ><a href="statistics.html">Statistics</a></li>
-        <li  ><a href="indexc.html">Graph Visualization</a></li>
+        <li  ><a href="query.html">Query</a></li>
+        <li  ><a href="indexc.html">Visualization</a></li>
+        <li ><div class="dropdown">
+          <button class="dropbtn">Download</button>
+          <div class="dropdown-content">
 
+            <a href="GridOntology-1.3.ttl" download="GridOntology-1.3.ttl">Turtle</a>
+            <a href="GridOntology-1.3.jsonld" download="GridOntology-1.3.jsonld">JSON-LD</a>
+            <a href="GridOntology-1.3.rdf" download="GridOntology-1.3.rdf">RDF/XML</a>
+
+          </div>
+        </div>
+      </li>
 
 
 
@@ -483,9 +560,11 @@
 
         <div class="page-header">
 
-            <h3>Home
+            <h3>    Grid Ontology
+
 
             </h3>
+            <p>The grid ontology defines the electrical grid vocabulary. It extends the platoon electric power system ontology (plt:ElectricPowerSystem) with the entities defining the network of electricity delivery from producers to  consumers.</p>
 
         </div>
 
@@ -501,7 +580,7 @@
 
            
 
-           <div class="row"><div class="col-md-12">
+           <div class="row"><div class="col-md-13">
               <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">Ontology Metadata</h3>
@@ -552,7 +631,7 @@
                             <dd>http://purl.org/vocommons/voaf#Vocabulary</dd>
                         
                             
-                            <dd>http://www.w3.org/2002/07/owl#Ontology</dd>
+                             <dd>http://www.w3.org/2002/07/owl#Ontology</dd>
                         
                             <dt>vann:preferredNamespacePrefix</dt>
                             <dd>plt</dd>
@@ -566,101 +645,44 @@
           </div>
            </div></div>
            
-        
-
-
-           <div class="row"><div class="col-md-12">
-              <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Metrics</h3>
-            </div>
-            <div class="panel-body">
-                <dl>
-
-                 
-
-                  
-
-                  
-
-                    
-
-                  
-
-                      <dt>Classes</dt>
-                      <dd>26</dd>
-
-                  
-
-                    
-
-                  
-
-                      <dt>Properties</dt>
-                      <dd>30</dd>
-
-                  
-
-                    
-
-                  
-
-                      <dt>Annotation Properties</dt>
-                      <dd>10</dd>
-
-                  
-
-                    
-
-                  
-
-                      <dt>Object Properties</dt>
-                      <dd>17</dd>
-
-                  
-
-                    
-
-                  
-
-                      <dt>Datatype Properties</dt>
-                      <dd>3</dd>
-
-                  
-
-                    
-
-                  
-
-                      <dt>Skos Concepts</dt>
-                      <dd>0</dd>
-
-                  
-
-                    
-
-                  
-
-                      <dt>Data Shapes</dt>
-                      <dd>0</dd>
-
-                  
-
-                    
-
-                  
-
-                    
-
-                </dl>
-            </div>
           </div>
-           </div></div>
+     
+           <div class="col-md-6">
+  
+  
+            <div class="row"><div class="col-md-12">
+                <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Entity Types</h3>
+              </div>
+              <div class="panel-body">
+
+
+                  <div class="row">
+
+
+                      <div class="col-md-12 "><iframe class="chartjs-hidden-iframe" tabindex="-1" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;"></iframe>
+                          <br>
+                          <canvas id="entitiesBarChart" width="1408" height="704" style="display: block; height: 352px; width: 704px;"></canvas>
+                      </div>
+
+
+
+                  </div>
+
+
+              </div>
+            </div>
+             </div></div>
+
+
 
 
 
 
         </div>
+
+           
          
 
 
@@ -678,21 +700,13 @@
               <div class="panel-body" style="overflow: auto;">
                  <dl class="-dl-horizontal" style="--margin-left: -100px;">
 
-                 
-                     <dt><span class="label label-info">cc</span></dt>
-                     <dd><a href="http://creativecommons.org/ns#" target="_blank">http://creativecommons.org/ns#</a></dd>
-
-                 
+                                 
                      <dt><span class="label label-info">dc</span></dt>
                      <dd><a href="http://purl.org/dc/elements/1.1/" target="_blank">http://purl.org/dc/elements/1.1/</a></dd>
 
                  
                      <dt><span class="label label-info">dcterms</span></dt>
                      <dd><a href="http://purl.org/dc/terms/" target="_blank">http://purl.org/dc/terms/</a></dd>
-
-                 
-                     <dt><span class="label label-info">foaf</span></dt>
-                     <dd><a href="http://xmlns.com/foaf/0.1/" target="_blank">http://xmlns.com/foaf/0.1/</a></dd>
 
                  
                      <dt><span class="label label-info">owl</span></dt>
@@ -719,18 +733,6 @@
                      <dd><a href="https://w3id.org/seas/" target="_blank">https://w3id.org/seas/</a></dd>
 
                  
-                     <dt><span class="label label-info">sh</span></dt>
-                     <dd><a href="http://www.w3.org/ns/shacl#" target="_blank">http://www.w3.org/ns/shacl#</a></dd>
-
-                 
-                     <dt><span class="label label-info">skos</span></dt>
-                     <dd><a href="http://www.w3.org/2004/02/skos/core#" target="_blank">http://www.w3.org/2004/02/skos/core#</a></dd>
-
-                 
-                     <dt><span class="label label-info">time</span></dt>
-                     <dd><a href="http://www.w3.org/2006/time#" target="_blank">http://www.w3.org/2006/time#</a></dd>
-
-                 
                      <dt><span class="label label-info">vann</span></dt>
                      <dd><a href="http://purl.org/vocab/vann/" target="_blank">http://purl.org/vocab/vann/</a></dd>
 
@@ -738,19 +740,7 @@
                      <dt><span class="label label-info">voaf</span></dt>
                      <dd><a href="http://purl.org/vocommons/voaf#" target="_blank">http://purl.org/vocommons/voaf#</a></dd>
 
-                 
-                     <dt><span class="label label-info">void</span></dt>
-                     <dd><a href="http://rdfs.org/ns/void#" target="_blank">http://rdfs.org/ns/void#</a></dd>
-
-                 
-                     <dt><span class="label label-info">vs</span></dt>
-                     <dd><a href="http://www.w3.org/2003/06/sw-vocab-status/ns#" target="_blank">http://www.w3.org/2003/06/sw-vocab-status/ns#</a></dd>
-
-                 
-                     <dt><span class="label label-info">xml</span></dt>
-                     <dd><a href="http://www.w3.org/XML/1998/namespace" target="_blank">http://www.w3.org/XML/1998/namespace</a></dd>
-
-                 
+                                  
                      <dt><span class="label label-info">xsd</span></dt>
                      <dd><a href="http://www.w3.org/2001/XMLSchema#" target="_blank">http://www.w3.org/2001/XMLSchema#</a></dd>
 
@@ -765,7 +755,6 @@
         </div>
          
 
-      </div>
 
 
 
@@ -840,6 +829,107 @@ $('#search-input-sidebar').keyup(function() {
       return !~text.indexOf(val);
   }).hide();
 });
+ // utility to assign colors dynamically at js level
+
+ function getColor(i) {
+        var colors = [["#F7464A", "#FF5A5E"],    // color , highlightColor
+                       ["#46BFBD", "#5AD3D1"],
+                       ["#FDB45C", "#FFC870"],
+                       ["#6588A8", "#CCD3FF"],
+                       ["#6960EC", "#736AFF"],
+                       ["#FFA62F", "#FBB917"],
+                       ["#7D0552", "#7E354D"],
+                       ["#FDB45C", "#FFC870"],
+                        ];
+        return colors[i]
+    }
+
+
+
+// FIRST CHART : types of entities
+
+
+	var ctx = document.getElementById("entitiesBarChart").getContext("2d");
+
+    var data = {
+    // labels: ["January", "February", "March", "April", "May", "June", "July"],
+    labels: [
+             
+                
+            
+                
+            
+                "Classes"
+                     , 
+                
+            
+                "Platoon Classes"
+                     , 
+                              
+            
+                "Properties"
+                     , 
+                
+                        
+                "Platoon Properties"
+                     ,   
+                "Annotation Properties"
+                     , 
+                
+            
+                "Object Properties"
+                     , 
+                
+            
+                "Datatype Properties"
+                     , 
+
+                
+            
+                
+            
+    ],
+    datasets: [
+        {
+            label: "Entities Count",
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1,
+          // data: [65, 59, 80, 81, 56, 55, 40],
+            data: [
+             
+                
+            26,10,30,18,10,17,3
+            
+                 ],
+            }
+        ]
+        };
+
+    var myBarChart = new Chart(ctx, {
+    type: 'bar',
+    data: data,
+    options: {
+        legend: {
+            display: false,
+        }
+        }
+    });
+
 
 </script>
 
