@@ -1,0 +1,1517 @@
+[
+    {
+      "@id": "_:b0",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Restriction"
+      ],
+      "http://www.w3.org/2002/07/owl#onProperty": [
+        {
+          "@id": "https://w3id.org/seas/connectedTo"
+        }
+      ],
+      "http://www.w3.org/2002/07/owl#someValuesFrom": [
+        {
+          "@id": "https://w3id.org/platoon/ElectricalGrid"
+        }
+      ]
+    },
+    {
+      "@id": "_:b1",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Restriction"
+      ],
+      "http://www.w3.org/2002/07/owl#onProperty": [
+        {
+          "@id": "https://w3id.org/seas/connectedTo"
+        }
+      ],
+      "http://www.w3.org/2002/07/owl#someValuesFrom": [
+        {
+          "@id": "https://w3id.org/platoon/ChargingStation"
+        }
+      ]
+    },
+    {
+      "@id": "_:b10",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Restriction"
+      ],
+      "http://www.w3.org/2002/07/owl#onProperty": [
+        {
+          "@id": "https://w3id.org/platoon/simulates"
+        }
+      ],
+      "http://www.w3.org/2002/07/owl#allValuesFrom": [
+        {
+          "@id": "https://w3id.org/platoon/ElectricalGrid"
+        }
+      ]
+    },
+    {
+      "@id": "_:b11",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Restriction"
+      ],
+      "http://www.w3.org/2002/07/owl#onProperty": [
+        {
+          "@id": "https://w3id.org/seas/member"
+        }
+      ],
+      "http://www.w3.org/2002/07/owl#allValuesFrom": [
+        {
+          "@id": "https://w3id.org/seas/ElectricVehiculeChargingStation"
+        }
+      ]
+    },
+    {
+      "@id": "_:b2",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Restriction"
+      ],
+      "http://www.w3.org/2002/07/owl#onProperty": [
+        {
+          "@id": "https://w3id.org/seas/connectedTo"
+        }
+      ],
+      "http://www.w3.org/2002/07/owl#someValuesFrom": [
+        {
+          "@id": "https://w3id.org/seas/ElectricVehiculeChargingStation"
+        }
+      ]
+    },
+    {
+      "@id": "_:b3",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Restriction"
+      ],
+      "http://www.w3.org/2002/07/owl#onProperty": [
+        {
+          "@id": "https://w3id.org/seas/connectedTo"
+        }
+      ],
+      "http://www.w3.org/2002/07/owl#someValuesFrom": [
+        {
+          "@id": "https://w3id.org/platoon/BikeChargingStation"
+        }
+      ]
+    },
+    {
+      "@id": "_:b4",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Restriction"
+      ],
+      "http://www.w3.org/2002/07/owl#onProperty": [
+        {
+          "@id": "https://w3id.org/seas/connectedTo"
+        }
+      ],
+      "http://www.w3.org/2002/07/owl#someValuesFrom": [
+        {
+          "@id": "https://w3id.org/platoon/PowerCenter"
+        }
+      ]
+    },
+    {
+      "@id": "_:b5",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Restriction"
+      ],
+      "http://www.w3.org/2002/07/owl#onProperty": [
+        {
+          "@id": "https://w3id.org/seas/connectedTo"
+        }
+      ],
+      "http://www.w3.org/2002/07/owl#someValuesFrom": [
+        {
+          "@id": "https://w3id.org/seas/ElectricPowerProducer"
+        }
+      ]
+    },
+    {
+      "@id": "_:b6",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Restriction"
+      ],
+      "http://www.w3.org/2002/07/owl#onProperty": [
+        {
+          "@id": "https://w3id.org/saref#hasState"
+        }
+      ],
+      "http://www.w3.org/2002/07/owl#allValuesFrom": [
+        {
+          "@id": "_:b7"
+        }
+      ]
+    },
+    {
+      "@id": "_:b7",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2002/07/owl#unionOf": [
+        {
+          "@id": "_:b8"
+        }
+      ]
+    },
+    {
+      "@id": "_:b8",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+        {
+          "@id": "https://w3id.org/saref#OnState"
+        }
+      ],
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+        {
+          "@id": "_:b9"
+        }
+      ]
+    },
+    {
+      "@id": "_:b9",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+        {
+          "@id": "https://w3id.org/saref#OffState"
+        }
+      ],
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+        {
+          "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.org/dc/terms/contributor",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#AnnotationProperty"
+      ]
+    },
+    {
+      "@id": "http://purl.org/dc/terms/creator",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#AnnotationProperty"
+      ]
+    },
+    {
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#AnnotationProperty"
+      ]
+    },
+    {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#AnnotationProperty"
+      ]
+    },
+    {
+      "@id": "http://purl.org/dc/terms/license",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#AnnotationProperty"
+      ]
+    },
+    {
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#AnnotationProperty"
+      ]
+    },
+    {
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#AnnotationProperty"
+      ]
+    },
+    {
+      "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#AnnotationProperty"
+      ]
+    },
+    {
+      "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#AnnotationProperty"
+      ]
+    },
+    {
+      "@id": "http://purl.org/vocommons/voaf#Vocabulary",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+    },
+    {
+      "@id": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    {
+      "@id": "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    },
+    {
+      "@id": "http://www.w3.org/2002/07/owl#Class"
+    },
+    {
+      "@id": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "@id": "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    },
+    {
+      "@id": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "http://www.w3.org/2002/07/owl#Ontology"
+    },
+    {
+      "@id": "http://www.w3.org/2002/07/owl#Restriction"
+    },
+    {
+      "@id": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#AnnotationProperty"
+      ]
+    },
+    {
+      "@id": "http://xmlns.com/foaf/0.1/Person",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ]
+    },
+    {
+      "@id": "http://xmlns.com/foaf/0.1/name",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#DatatypeProperty"
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/"
+    },
+    {
+      "@id": "https://w3id.org/platoon/AlignmentOntology-1.3"
+    },
+    {
+      "@id": "https://w3id.org/platoon/BikeChargingStation"
+    },
+    {
+      "@id": "https://w3id.org/platoon/ChargingStation"
+    },
+    {
+      "@id": "https://w3id.org/platoon/DemandGoodProperty",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "Demand Good Property",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "A Demand Good  Property is a property that describes the good required by the demand.",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+        {
+          "@id": "https://w3id.org/seas/BooleanProperty"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/ElectricGridSimulator",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "Electric Grid Simulator",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "An electric grid simulator is a system that simulates electrical grid",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+        {
+          "@id": "https://w3id.org/seas/ElectricPowerSystem"
+        },
+        {
+          "@id": "https://w3id.org/platoon/PowerConvertor"
+        },
+        {
+          "@id": "_:b10"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/ElectricPowerSystemOntology-1.3"
+    },
+    {
+      "@id": "https://w3id.org/platoon/ElectricVehiculeChargingStationGroup",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "Electric Vehicule Charging Station Group",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "Electric Vehicule Charging Station Group is a group system which has member only Electric Vehicule Charging Station. ",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+        {
+          "@id": "https://w3id.org/seas/ElectricPowerSystem"
+        },
+        {
+          "@id": "_:b11"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/ElectricalGrid",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "Electrical Grid",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "An electrical grid is an interconnected network for delivering electricity from producers to consumers. (source: wikipedia)",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+        {
+          "@id": "https://w3id.org/seas/ElectricPowerSystem"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/EnergyProductionProperty"
+    },
+    {
+      "@id": "https://w3id.org/platoon/GridOntology",
+      "@type": [
+        "http://purl.org/vocommons/voaf#Vocabulary",
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "http://purl.org/dc/terms/title": [
+        {
+          "@value": "Platoon grid Ontology",
+          "@language": "en"
+        }
+      ],
+      "http://purl.org/dc/terms/description": [
+        {
+          "@value": "The platoon grid vocabulary for the  Platoon  project.",
+          "@language": "en"
+        }
+      ],
+      "http://purl.org/dc/terms/issued": [
+        {
+          "@value": "2020-11-20",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        }
+      ],
+      "http://purl.org/dc/terms/modified": [
+        {
+          "@value": "2021-08-10",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        }
+      ],
+      "http://purl.org/dc/terms/creator": [
+        {
+          "@value": "Sarra BEN ABBES and Lynda TEMAL and Oumy SEYE"
+        }
+      ],
+      "http://purl.org/dc/terms/license": [
+        {
+          "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "http://purl.org/vocab/vann/preferredNamespacePrefix": [
+        {
+          "@value": "plt"
+        }
+      ],
+      "http://purl.org/vocab/vann/preferredNamespaceUri": [
+        {
+          "@id": "https://w3id.org/platoon/"
+        }
+      ],
+      "http://www.w3.org/2002/07/owl#versionIRI": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology-1.3"
+        }
+      ],
+      "http://www.w3.org/2002/07/owl#imports": [
+        {
+          "@id": "https://w3id.org/platoon/AlignmentOntology-1.3"
+        },
+        {
+          "@id": "https://w3id.org/saref"
+        },
+        {
+          "@id": "https://w3id.org/platoon/ElectricPowerSystemOntology-1.3"
+        }
+      ],
+      "http://www.w3.org/2002/07/owl#versionInfo": [
+        {
+          "@value": "v1.3"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/GridOntology-1.3"
+    },
+    {
+      "@id": "https://w3id.org/platoon/NetworkGoodProperty",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "Network Good Property",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "A Network Good  Property is a property that describes the good exchanged in the network",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+        {
+          "@id": "https://w3id.org/seas/BooleanProperty"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/PowerCenter"
+    },
+    {
+      "@id": "https://w3id.org/platoon/PowerConvertor"
+    },
+    {
+      "@id": "https://w3id.org/platoon/SmartMicroGrid",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "Smart Micro Grid",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "Micro grid refers to a distribution network for electrical energy, starting from electricity generation to its transmission and storage with the ability to respond to dynamic changes in energy supply through co-generation and demand adjustments. (source: https://ieeexplore.ieee.org/document/5763195)",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+        {
+          "@id": "https://w3id.org/platoon/ElectricalGrid"
+        },
+        {
+          "@id": "_:b0"
+        },
+        {
+          "@id": "_:b1"
+        },
+        {
+          "@id": "_:b2"
+        },
+        {
+          "@id": "_:b3"
+        },
+        {
+          "@id": "_:b4"
+        },
+        {
+          "@id": "_:b5"
+        },
+        {
+          "@id": "_:b6"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/StorageSystem"
+    },
+    {
+      "@id": "https://w3id.org/platoon/connectsAtGridSide",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#ObjectProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "simulates",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "Links a system to one of the connection points at which it connects grid Side.",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+        {
+          "@id": "https://w3id.org/seas/connectsAt"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain": [
+        {
+          "@id": "https://w3id.org/seas/System"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range": [
+        {
+          "@id": "https://w3id.org/seas/ConnectionPoint"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/hasConnectorEfficiencyGood1to2",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#ObjectProperty",
+        "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "has connector efficiency Good1to2",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "Links the storage system to its connector efficiency from good 1 to good 2.",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+        {
+          "@id": "https://w3id.org/seas/efficiency"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain": [
+        {
+          "@id": "https://w3id.org/platoon/StorageSystem"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range": [
+        {
+          "@id": "https://w3id.org/seas/EfficiencyProperty"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/hasConnectorEfficiencyGood2to1",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#ObjectProperty",
+        "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "has connector efficiency Good2to1",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "Links the storage system to its connector efficiency from good 2 to good 1.",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+        {
+          "@id": "https://w3id.org/seas/efficiency"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain": [
+        {
+          "@id": "https://w3id.org/platoon/StorageSystem"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range": [
+        {
+          "@id": "https://w3id.org/seas/EfficiencyProperty"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/hasConnectorGood1",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#DatatypeProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "has connector good1",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "name of the connector good 1.",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain": [
+        {
+          "@id": "https://w3id.org/platoon/StorageSystem"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range": [
+        {
+          "@id": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/hasConnectorGood2",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#DatatypeProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "has connector good2",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "name of the connector good 2.",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain": [
+        {
+          "@id": "https://w3id.org/platoon/StorageSystem"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range": [
+        {
+          "@id": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/hasConnectorMaximumTransmissionPowerGood1",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#ObjectProperty",
+        "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "has connector maximum transmission power good 1",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "Links the storage system to its maximum transmission power of good 1.",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+        {
+          "@id": "https://w3id.org/seas/electricPower"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain": [
+        {
+          "@id": "https://w3id.org/platoon/StorageSystem"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range": [
+        {
+          "@id": "https://w3id.org/seas/ElectricPowerProperty"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/hasDeltaDemand",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#ObjectProperty",
+        "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "has delta demand",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "Links the electrical grid to its maximum admissible variation of the demand respect to the forecasted value.",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+        {
+          "@id": "https://w3id.org/seas/hasProperty"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain": [
+        {
+          "@id": "https://w3id.org/platoon/ElectricalGrid"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range": [
+        {
+          "@id": "https://w3id.org/seas/PercentageProperty"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/hasDeltaNonDispatchable",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#ObjectProperty",
+        "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "has delta non dispatchable",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "Links the electrical grid to its maximum admissible variation of the non-dispatchable production",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+        {
+          "@id": "https://w3id.org/seas/hasProperty"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain": [
+        {
+          "@id": "https://w3id.org/platoon/ElectricalGrid"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range": [
+        {
+          "@id": "https://w3id.org/seas/PercentageProperty"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/hasDemandGood",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#ObjectProperty",
+        "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "has demand good",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "Links the electrical grid to its good required by the demand",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+        {
+          "@id": "https://w3id.org/seas/hasProperty"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain": [
+        {
+          "@id": "https://w3id.org/platoon/ElectricalGrid"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range": [
+        {
+          "@id": "https://w3id.org/platoon/DemandGoodProperty"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/hasEnergyProduction"
+    },
+    {
+      "@id": "https://w3id.org/platoon/hasFuelCost",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#ObjectProperty",
+        "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "has fuel cost",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "Links the electrical grid to its fuel cost",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+        {
+          "@id": "https://w3id.org/seas/hasProperty"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain": [
+        {
+          "@id": "https://w3id.org/platoon/ElectricalGrid"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range": [
+        {
+          "@id": "https://w3id.org/seas/PriceProperty"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/hasNetworkBuyPrice",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#ObjectProperty",
+        "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "has network buy price",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "Links the electrical grid to its purchase price.",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+        {
+          "@id": "https://w3id.org/seas/hasProperty"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain": [
+        {
+          "@id": "https://w3id.org/platoon/ElectricalGrid"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range": [
+        {
+          "@id": "https://w3id.org/seas/BuyingPriceProperty"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/hasNetworkGood",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#ObjectProperty",
+        "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "has Network Good",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "Links the electrical grid to its good exchanged in the network.",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+        {
+          "@id": "https://w3id.org/seas/hasProperty"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain": [
+        {
+          "@id": "https://w3id.org/platoon/ElectricalGrid"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range": [
+        {
+          "@id": "https://w3id.org/platoon/NetworkGoodProperty"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/hasNetworkMaximumBuy",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#ObjectProperty",
+        "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "has network maximum buy",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "Links the electrical grid to its maximum rate that can be bought from the network.",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+        {
+          "@id": "https://w3id.org/seas/hasProperty"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain": [
+        {
+          "@id": "https://w3id.org/platoon/ElectricalGrid"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range": [
+        {
+          "@id": "https://w3id.org/seas/PercentageProperty"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/hasNetworkMaximumSell",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#ObjectProperty",
+        "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "has network maximum sell",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "Links the electrical grid to its maximum rate that can be sold to the network.",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+        {
+          "@id": "https://w3id.org/seas/hasProperty"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain": [
+        {
+          "@id": "https://w3id.org/platoon/ElectricalGrid"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range": [
+        {
+          "@id": "https://w3id.org/seas/PercentageProperty"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/hasNetworkSellPrice",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#ObjectProperty",
+        "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "has network sell price",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "Links the electrical grid to its selling price.",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+        {
+          "@id": "https://w3id.org/seas/hasProperty"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain": [
+        {
+          "@id": "https://w3id.org/platoon/ElectricalGrid"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range": [
+        {
+          "@id": "https://w3id.org/seas/SellingPriceProperty"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/hasNonDispatchableCurtailmentCost",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#ObjectProperty",
+        "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "has nondispatchable curtailment cost",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "Links the electrical grid to its non dispatchable curtailment cost",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+        {
+          "@id": "https://w3id.org/seas/hasProperty"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain": [
+        {
+          "@id": "https://w3id.org/platoon/ElectricalGrid"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range": [
+        {
+          "@id": "https://w3id.org/seas/PriceProperty"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/hasNonDispatchableOutputGood",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#ObjectProperty",
+        "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "has non dispatchable output good",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "Links the electrical grid to its good produced by non-dispatchable machine.",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+        {
+          "@id": "https://w3id.org/platoon/hasEnergyProduction"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain": [
+        {
+          "@id": "https://w3id.org/platoon/ElectricalGrid"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range": [
+        {
+          "@id": "https://w3id.org/platoon/EnergyProductionProperty"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/hasUnmetDemandCost",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#ObjectProperty",
+        "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#label": [
+        {
+          "@value": "has unmet demand cost",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": [
+        {
+          "@value": "Links the electrical grid to its unmet demand cost",
+          "@language": "en"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+        {
+          "@id": "https://w3id.org/seas/hasProperty"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#domain": [
+        {
+          "@id": "https://w3id.org/platoon/ElectricalGrid"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#range": [
+        {
+          "@id": "https://w3id.org/seas/PriceProperty"
+        }
+      ],
+      "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+        {
+          "@value": "testing"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+        {
+          "@id": "https://w3id.org/platoon/GridOntology"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/platoon/simulates"
+    },
+    {
+      "@id": "https://w3id.org/saref"
+    },
+    {
+      "@id": "https://w3id.org/saref#OffState",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ]
+    },
+    {
+      "@id": "https://w3id.org/saref#OnState",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ]
+    },
+    {
+      "@id": "https://w3id.org/saref#State",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ]
+    },
+    {
+      "@id": "https://w3id.org/saref#hasState"
+    },
+    {
+      "@id": "https://w3id.org/seas/BooleanProperty",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+        {
+          "@id": "https://w3id.org/seas/EnumeratedProperty"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/seas/BuyingPriceProperty"
+    },
+    {
+      "@id": "https://w3id.org/seas/ConnectionPoint"
+    },
+    {
+      "@id": "https://w3id.org/seas/EfficiencyProperty"
+    },
+    {
+      "@id": "https://w3id.org/seas/ElectricPowerProducer"
+    },
+    {
+      "@id": "https://w3id.org/seas/ElectricPowerProperty"
+    },
+    {
+      "@id": "https://w3id.org/seas/ElectricPowerSystem"
+    },
+    {
+      "@id": "https://w3id.org/seas/ElectricVehiculeChargingStation"
+    },
+    {
+      "@id": "https://w3id.org/seas/EnumeratedProperty"
+    },
+    {
+      "@id": "https://w3id.org/seas/PercentageProperty",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+        {
+          "@id": "https://w3id.org/seas/Property"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/seas/PriceProperty",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+        {
+          "@id": "https://w3id.org/seas/Property"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/seas/Property"
+    },
+    {
+      "@id": "https://w3id.org/seas/SellingPriceProperty"
+    },
+    {
+      "@id": "https://w3id.org/seas/System"
+    },
+    {
+      "@id": "https://w3id.org/seas/connectedTo",
+      "@type": [
+        "http://www.w3.org/2002/07/owl#ObjectProperty"
+      ]
+    },
+    {
+      "@id": "https://w3id.org/seas/connectsAt"
+    },
+    {
+      "@id": "https://w3id.org/seas/efficiency"
+    },
+    {
+      "@id": "https://w3id.org/seas/electricPower"
+    },
+    {
+      "@id": "https://w3id.org/seas/hasProperty"
+    },
+    {
+      "@id": "https://w3id.org/seas/member"
+    },
+    {
+      "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]

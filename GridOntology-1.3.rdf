@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:ns0="http://purl.org/vocab/vann/"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#">
+
+  <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary">
+  </owl:Class>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued">
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified">
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator">
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+  </owl:AnnotationProperty>
+
+  <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+  </owl:Class>
+
+  <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name">
+  </owl:DatatypeProperty>
+
+  <rdf:Description rdf:about="https://w3id.org/platoon/GridOntology">
+    <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dc:title xml:lang="en">Platoon grid Ontology</dc:title>
+    <dc:description xml:lang="en">The platoon grid vocabulary for the  Platoon  project.</dc:description>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-20</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-10</dc:modified>
+    <dc:creator>Sarra BEN ABBES and Lynda TEMAL and Oumy SEYE</dc:creator>
+    <dc:license rdf:resource="https://www.apache.org/licenses/LICENSE-2.0"/>
+    <ns0:preferredNamespacePrefix>plt</ns0:preferredNamespacePrefix>
+    <ns0:preferredNamespaceUri rdf:resource="https://w3id.org/platoon/"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/platoon/GridOntology-1.3"/>
+    <owl:imports rdf:resource="https://w3id.org/platoon/AlignmentOntology-1.3"/>
+    <owl:imports rdf:resource="https://w3id.org/saref"/>
+    <owl:imports rdf:resource="https://w3id.org/platoon/ElectricPowerSystemOntology-1.3"/>
+    <owl:versionInfo>v1.3</owl:versionInfo>
+  </rdf:Description>
+
+  <owl:Class rdf:about="https://w3id.org/platoon/ElectricalGrid">
+    <rdfs:label xml:lang="en">Electrical Grid</rdfs:label>
+    <rdfs:comment xml:lang="en">An electrical grid is an interconnected network for delivering electricity from producers to consumers. (source: wikipedia)</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/seas/ElectricPowerSystem"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/platoon/SmartMicroGrid">
+    <rdfs:label xml:lang="en">Smart Micro Grid</rdfs:label>
+    <rdfs:comment xml:lang="en">Micro grid refers to a distribution network for electrical energy, starting from electricity generation to its transmission and storage with the ability to respond to dynamic changes in energy supply through co-generation and demand adjustments. (source: https://ieeexplore.ieee.org/document/5763195)</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/platoon/ElectricalGrid"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://w3id.org/seas/connectedTo"/>
+        <owl:someValuesFrom rdf:resource="https://w3id.org/platoon/ElectricalGrid"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://w3id.org/seas/connectedTo"/>
+        <owl:someValuesFrom rdf:resource="https://w3id.org/platoon/ChargingStation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://w3id.org/seas/connectedTo"/>
+        <owl:someValuesFrom rdf:resource="https://w3id.org/seas/ElectricVehiculeChargingStation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://w3id.org/seas/connectedTo"/>
+        <owl:someValuesFrom rdf:resource="https://w3id.org/platoon/BikeChargingStation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://w3id.org/seas/connectedTo"/>
+        <owl:someValuesFrom rdf:resource="https://w3id.org/platoon/PowerCenter"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://w3id.org/seas/connectedTo"/>
+        <owl:someValuesFrom rdf:resource="https://w3id.org/seas/ElectricPowerProducer"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://w3id.org/saref#hasState"/>
+        <owl:allValuesFrom>
+          <owl:Class>
+            <owl:unionOf>
+              <rdf:Description>
+                <rdf:first>
+                  <owl:Class rdf:about="https://w3id.org/saref#OnState">
+                  </owl:Class>
+                </rdf:first>
+
+                <rdf:rest>
+                  <rdf:Description>
+                    <rdf:first>
+                      <owl:Class rdf:about="https://w3id.org/saref#OffState">
+                      </owl:Class>
+                    </rdf:first>
+
+                    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                  </rdf:Description>
+                </rdf:rest>
+
+              </rdf:Description>
+            </owl:unionOf>
+
+          </owl:Class>
+        </owl:allValuesFrom>
+
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/platoon/ElectricGridSimulator">
+    <rdfs:label xml:lang="en">Electric Grid Simulator</rdfs:label>
+    <rdfs:comment xml:lang="en">An electric grid simulator is a system that simulates electrical grid</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/seas/ElectricPowerSystem"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/platoon/PowerConvertor"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://w3id.org/platoon/simulates"/>
+        <owl:allValuesFrom rdf:resource="https://w3id.org/platoon/ElectricalGrid"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/platoon/ElectricVehiculeChargingStationGroup">
+    <rdfs:label xml:lang="en">Electric Vehicule Charging Station Group</rdfs:label>
+    <rdfs:comment xml:lang="en">Electric Vehicule Charging Station Group is a group system which has member only Electric Vehicule Charging Station. </rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/seas/ElectricPowerSystem"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="https://w3id.org/seas/member"/>
+        <owl:allValuesFrom rdf:resource="https://w3id.org/seas/ElectricVehiculeChargingStation"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/platoon/connectsAtGridSide">
+    <rdfs:label xml:lang="en">simulates</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a system to one of the connection points at which it connects grid Side.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/connectsAt"/>
+    <rdfs:domain rdf:resource="https://w3id.org/seas/System"/>
+    <rdfs:range rdf:resource="https://w3id.org/seas/ConnectionPoint"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:ObjectProperty>
+
+  <owl:DatatypeProperty rdf:about="https://w3id.org/platoon/hasConnectorGood1">
+    <rdfs:label xml:lang="en">has connector good1</rdfs:label>
+    <rdfs:comment xml:lang="en">name of the connector good 1.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://w3id.org/platoon/StorageSystem"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="https://w3id.org/platoon/hasConnectorGood2">
+    <rdfs:label xml:lang="en">has connector good2</rdfs:label>
+    <rdfs:comment xml:lang="en">name of the connector good 2.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://w3id.org/platoon/StorageSystem"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:DatatypeProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/platoon/hasConnectorEfficiencyGood1to2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">has connector efficiency Good1to2</rdfs:label>
+    <rdfs:comment xml:lang="en">Links the storage system to its connector efficiency from good 1 to good 2.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/efficiency"/>
+    <rdfs:domain rdf:resource="https://w3id.org/platoon/StorageSystem"/>
+    <rdfs:range rdf:resource="https://w3id.org/seas/EfficiencyProperty"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/platoon/hasConnectorEfficiencyGood2to1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">has connector efficiency Good2to1</rdfs:label>
+    <rdfs:comment xml:lang="en">Links the storage system to its connector efficiency from good 2 to good 1.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/efficiency"/>
+    <rdfs:domain rdf:resource="https://w3id.org/platoon/StorageSystem"/>
+    <rdfs:range rdf:resource="https://w3id.org/seas/EfficiencyProperty"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/platoon/hasConnectorMaximumTransmissionPowerGood1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">has connector maximum transmission power good 1</rdfs:label>
+    <rdfs:comment xml:lang="en">Links the storage system to its maximum transmission power of good 1.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/electricPower"/>
+    <rdfs:domain rdf:resource="https://w3id.org/platoon/StorageSystem"/>
+    <rdfs:range rdf:resource="https://w3id.org/seas/ElectricPowerProperty"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:about="https://w3id.org/platoon/NetworkGoodProperty">
+    <rdfs:label xml:lang="en">Network Good Property</rdfs:label>
+    <rdfs:comment xml:lang="en">A Network Good  Property is a property that describes the good exchanged in the network</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/seas/BooleanProperty"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/platoon/hasNetworkGood">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">has Network Good</rdfs:label>
+    <rdfs:comment xml:lang="en">Links the electrical grid to its good exchanged in the network.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/platoon/ElectricalGrid"/>
+    <rdfs:range rdf:resource="https://w3id.org/platoon/NetworkGoodProperty"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/platoon/hasNetworkMaximumBuy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">has network maximum buy</rdfs:label>
+    <rdfs:comment xml:lang="en">Links the electrical grid to its maximum rate that can be bought from the network.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/platoon/ElectricalGrid"/>
+    <rdfs:range rdf:resource="https://w3id.org/seas/PercentageProperty"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/platoon/hasNetworkMaximumSell">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">has network maximum sell</rdfs:label>
+    <rdfs:comment xml:lang="en">Links the electrical grid to its maximum rate that can be sold to the network.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/platoon/ElectricalGrid"/>
+    <rdfs:range rdf:resource="https://w3id.org/seas/PercentageProperty"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/platoon/hasNetworkBuyPrice">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">has network buy price</rdfs:label>
+    <rdfs:comment xml:lang="en">Links the electrical grid to its purchase price.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/platoon/ElectricalGrid"/>
+    <rdfs:range rdf:resource="https://w3id.org/seas/BuyingPriceProperty"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/platoon/hasNetworkSellPrice">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">has network sell price</rdfs:label>
+    <rdfs:comment xml:lang="en">Links the electrical grid to its selling price.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/platoon/ElectricalGrid"/>
+    <rdfs:range rdf:resource="https://w3id.org/seas/SellingPriceProperty"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/platoon/hasNonDispatchableOutputGood">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">has non dispatchable output good</rdfs:label>
+    <rdfs:comment xml:lang="en">Links the electrical grid to its good produced by non-dispatchable machine.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/platoon/hasEnergyProduction"/>
+    <rdfs:domain rdf:resource="https://w3id.org/platoon/ElectricalGrid"/>
+    <rdfs:range rdf:resource="https://w3id.org/platoon/EnergyProductionProperty"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/platoon/hasDeltaNonDispatchable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">has delta non dispatchable</rdfs:label>
+    <rdfs:comment xml:lang="en">Links the electrical grid to its maximum admissible variation of the non-dispatchable production</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/platoon/ElectricalGrid"/>
+    <rdfs:range rdf:resource="https://w3id.org/seas/PercentageProperty"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/platoon/hasNonDispatchableCurtailmentCost">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">has nondispatchable curtailment cost</rdfs:label>
+    <rdfs:comment xml:lang="en">Links the electrical grid to its non dispatchable curtailment cost</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/platoon/ElectricalGrid"/>
+    <rdfs:range rdf:resource="https://w3id.org/seas/PriceProperty"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/platoon/hasFuelCost">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">has fuel cost</rdfs:label>
+    <rdfs:comment xml:lang="en">Links the electrical grid to its fuel cost</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/platoon/ElectricalGrid"/>
+    <rdfs:range rdf:resource="https://w3id.org/seas/PriceProperty"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:about="https://w3id.org/platoon/DemandGoodProperty">
+    <rdfs:label xml:lang="en">Demand Good Property</rdfs:label>
+    <rdfs:comment xml:lang="en">A Demand Good  Property is a property that describes the good required by the demand.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/seas/BooleanProperty"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/platoon/hasDemandGood">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">has demand good</rdfs:label>
+    <rdfs:comment xml:lang="en">Links the electrical grid to its good required by the demand</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/platoon/ElectricalGrid"/>
+    <rdfs:range rdf:resource="https://w3id.org/platoon/DemandGoodProperty"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/platoon/hasDeltaDemand">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">has delta demand</rdfs:label>
+    <rdfs:comment xml:lang="en">Links the electrical grid to its maximum admissible variation of the demand respect to the forecasted value.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/platoon/ElectricalGrid"/>
+    <rdfs:range rdf:resource="https://w3id.org/seas/PercentageProperty"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/platoon/hasUnmetDemandCost">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">has unmet demand cost</rdfs:label>
+    <rdfs:comment xml:lang="en">Links the electrical grid to its unmet demand cost</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/seas/hasProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/platoon/ElectricalGrid"/>
+    <rdfs:range rdf:resource="https://w3id.org/seas/PriceProperty"/>
+    <ns1:term_status>testing</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/platoon/GridOntology"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:about="https://w3id.org/seas/PriceProperty">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Property"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/seas/BooleanProperty">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/seas/EnumeratedProperty"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://w3id.org/seas/PercentageProperty">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Property"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:about="https://w3id.org/seas/connectedTo">
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:about="https://w3id.org/saref#State">
+  </owl:Class>
+
+</rdf:RDF>
